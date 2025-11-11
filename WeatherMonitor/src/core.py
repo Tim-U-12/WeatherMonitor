@@ -1,16 +1,16 @@
-from bom_parser import *
+from bom_fetcher import download_bom_forecast
+from bom_parser import get_last_n_days_forecast, save_forecast_as_json 
 
-# Load file
-with open("data/IDV10460.txt", "r", encoding="utf-8") as f:
-    raw_text = f.read()
+def core():
+  # download_bom_forecast()
 
-# Parse last 3 days
-forecasts = get_last_n_days_forecast(raw_text, n=3)
+  # Load file
+  with open("data/IDV10460.txt", "r", encoding="utf-8") as f:
+      raw_text = f.read()
 
-# Print structured data
-for day in forecasts:
-    print(day)
+  # Parse last 3 days
+  forecasts = get_last_n_days_forecast(raw_text, n=3)
 
-# Save to JSON
-save_forecast_as_json(forecasts, "data/structured_last_3_days.json")
-print("✅ Saved to data/structured_last_3_days.json")
+  # Save to JSON
+  save_forecast_as_json(forecasts,"data/structured_last_3_days.json")
+  print("✅ Saved to data/structured_last_3_days.json")
