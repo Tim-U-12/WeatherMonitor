@@ -1,0 +1,20 @@
+[
+  {
+    "day": "Wednesday 12 November",
+    "winds": "West to northwesterly 15 to 25 knots decreasing to about 10 knots in the evening.",
+    "seas": "1 to 1.5 metres, decreasing to 1 metre during the morning.",
+    "weather": "Partly cloudy."
+  },
+  {
+    "day": "Thursday 13 November",
+    "winds": "Northwesterly about 10 knots tending westerly 15 to 20 knots during the day then tending southwesterly during the afternoon.",
+    "seas": "Around 1 metre.",
+    "weather": "Partly cloudy."
+  },
+  {
+    "day": "Friday 14 November",
+    "winds": "South to southwesterly 10 to 15 knots turning southeasterly during the day.",
+    "seas": "Below 1 metre.",
+    "weather": "Partly cloudy."
+  }
+]
