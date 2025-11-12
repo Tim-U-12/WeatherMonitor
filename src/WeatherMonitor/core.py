@@ -12,5 +12,5 @@ def core():
   forecasts = get_last_n_days_forecast(raw_text, n=3)
 
   # Save to JSON
-  save_forecast_as_json(forecasts,"data/structured_last_3_days.json")
-  print("✅ Saved to data/structured_last_3_days.json")
+  save_forecast_as_json(forecasts,"data/forecast.json")
+  print("✅ Saved to data/forecast.json")
