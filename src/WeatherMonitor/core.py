@@ -1,5 +1,6 @@
 from bom_fetcher import download_bom_forecast
 from bom_parser import get_last_n_days_forecast, save_forecast_as_json 
+from forecast_score import forecast_score
 
 def core():
   # download_bom_forecast()
@@ -14,3 +15,6 @@ def core():
   # Save to JSON
   save_forecast_as_json(forecasts,"data/forecast.json")
   print("✅ Saved to data/forecast.json")
+
+  forecastScore = forecast_score("forecast.json") 
+  print(forecastScore)
